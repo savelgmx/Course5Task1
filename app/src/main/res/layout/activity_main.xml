@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    style="@style/linearLayoutStyle"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:id="@+id/top"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:orientation="horizontal"
-        tools:ignore="UselessParent">
+        tools:ignore="UselessParent"
+        style="@style/linearLayoutStyle">
 
         <ImageView
             android:id="@+id/ivIcon"
@@ -39,18 +36,18 @@
             style="@style/textStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tvTitle"
-            android:layout_alignStart="@id/tvTitle"
-            android:layout_alignLeft="@id/tvTitle"
-            android:layout_alignBottom="@id/ivIcon"
+            android:layout_gravity="center_vertical"
+            android:layout_alignTop="@id/ivIcon"
+            android:layout_toEndOf="@id/ivIcon"
+            android:layout_toRightOf="@id/ivIcon"
+
             android:layout_marginTop="8dp"
             android:text="@string/text" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/linearLayoutStyle"
         android:orientation="vertical">
         <EditText
             android:id="@+id/etComment"
@@ -61,6 +58,9 @@
             android:layout_marginTop="8dp"
             android:hint="@string/comment" />
 
+        <LinearLayout
+            style="@style/linearLayoutStyle"
+            android:orientation="horizontal">
             <Button
                 android:id="@+id/btnPrevious"
                 style="@style/buttonStyle"
@@ -71,7 +71,9 @@
                 style="@style/buttonStyle"
                 android:text="@string/next" />
 
-        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
 
 
 </LinearLayout>

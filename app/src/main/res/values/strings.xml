@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Course5Task1</string>
     <string name="author">Bruce Lee</string>
-    <string name="text">master</string>
+    <string name="text">master of kung-fu</string>
     <string name="comment">Enter your comment</string>
     <string name="previous">Previous</string>
     <string name="next">Next</string>
