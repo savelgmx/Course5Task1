@@ -4,7 +4,11 @@
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryDark">@color/purple_700</item>
-        <item name="colorAccent">@color/teal_200</item>
+        <item name="colorAccent">@android:color/holo_orange_light</item>
         <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">#3949AB</item>
+        <item name="android:textColorPrimary">#00BCD4</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:navigationBarColor">#3949AB</item>
     </style>
 </resources>
